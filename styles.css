@@ -1,0 +1,466 @@
+/* Custom CSS for Garanti Städ i Lund AB */
+
+/* Root Variables */
+:root {
+    --primary-color: #0d6efd;
+    --primary-dark: #0a58ca;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 56px; /* Account for fixed navbar */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Navbar Enhancements */
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff !important;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hero Section with Background */
+.hero-bg {
+    background-image: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.6)), 
+                      url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.why-us-bg {
+    background-image: linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.85)), 
+                      url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-overlay,
+.why-us-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 110, 253, 0.05) 50%, rgba(13, 110, 253, 0.1) 100%);
+    z-index: 1;
+}
+
+.hero-section .container,
+#varfor-oss .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section .btn {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-section h1 {
+    color: white !important;
+}
+
+.hero-section .lead {
+    color: #f8f9fa !important;
+}
+
+.hero-section .text-primary {
+    color: white !important;
+}
+
+/* Why Us Section with Parallax */
+#varfor-oss {
+    color: white;
+}
+
+#varfor-oss h2 {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#varfor-oss .lead {
+    color: #f8f9fa !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#varfor-oss h4 {
+    color: #fff !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#varfor-oss p {
+    color: #e9ecef !important;
+}
+
+.hero-image-placeholder {
+    transition: transform 0.3s ease;
+}
+
+.hero-image-placeholder:hover {
+    transform: scale(1.05);
+}
+
+/* Services Cards */
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-body i {
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-body i {
+    color: var(--primary-dark) !important;
+}
+
+/* News Carousel */
+.news-card {
+    background: #ffffff;
+    border-left: 4px solid var(--primary-color);
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#newsCarousel {
+    padding: 0 50px;
+}
+
+#newsCarousel .carousel-item {
+    padding: 20px 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-indicators {
+    margin-bottom: 0;
+    position: static;
+    margin-top: 30px;
+}
+
+.carousel-indicators button {
+    background-color: var(--primary-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Why Choose Us Section */
+.feature-icon {
+    transition: all 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-dark) !important;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+}
+
+footer .contact-info a:hover {
+    color: var(--primary-color) !important;
+}
+
+footer .d-flex a {
+    transition: all 0.3s ease;
+}
+
+footer .d-flex a:hover {
+    color: var(--primary-color) !important;
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-image-placeholder {
+        height: 300px !important;
+    }
+    
+    .feature-icon {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .feature-icon i {
+        font-size: 1.5rem !important;
+    }
+    
+    /* Mobile Background Adjustments */
+    .hero-bg,
+    .why-us-bg {
+        background-attachment: scroll;
+    }
+    
+    #newsCarousel {
+        padding: 0 20px;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .hero-section .container {
+        padding-top: 2rem;
+    }
+    
+    .display-4 {
+        font-size: 1.75rem;
+    }
+    
+    .news-card {
+        margin: 0 10px;
+    }
+}
+
+
+
+/* Utility Classes */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.text-shadow-strong {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.box-shadow-lg {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Background Performance */
+.hero-bg,
+.why-us-bg {
+    will-change: auto;
+}
+
+/* Smooth Carousel Transitions */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Enhanced News Card Animation - Only Horizontal Movement */
+.carousel-item.active .news-card {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Loading Animation for Interactive Elements */
+.loading {
+    position: relative;
+    overflow: hidden;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-indicators {
+        display: none !important;
+    }
+    
+    body {
+        padding-top: 0;
+    }
+    
+    .card {
+        break-inside: avoid;
+    }
+    
+    .hero-bg,
+    .why-us-bg {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+}
+
+/* Cookie Consent Bar */
+.cookie-consent {
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+    border-top: 3px solid var(--primary-color);
+}
+
+.cookie-consent .btn {
+    min-width: 100px;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+/* Cookie consent mobile styles */
+@media (max-width: 768px) {
+    .cookie-consent .col-md-4 {
+        text-align: center !important;
+    }
+    
+    .cookie-consent .btn {
+        min-width: 80px;
+        padding: 0.375rem 0.75rem;
+    }
+}
