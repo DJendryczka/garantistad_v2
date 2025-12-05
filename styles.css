@@ -114,16 +114,37 @@ html {
     left: 0;
 }
 
-/* Hero Section with Background */
-.hero-bg {
-    background-image: linear-gradient(rgba(33, 37, 41, 0.85), rgba(33, 37, 41, 0.85)), 
-                      url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Hero Section with Slideshow */
+.hero-slideshow {
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
 }
 
 .why-us-bg {
@@ -135,7 +156,16 @@ html {
     position: relative;
 }
 
-.hero-overlay,
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(33, 37, 41, 0.65), rgba(33, 37, 41, 0.65));
+    z-index: 1;
+}
+
 .why-us-overlay {
     position: absolute;
     top: 0;

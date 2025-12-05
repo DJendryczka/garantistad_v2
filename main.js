@@ -80,3 +80,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 });
+
+// Hero Slideshow Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+    
+    function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    
+    // Auto-advance slides every 4 seconds
+    if (slides.length > 0) {
+        setInterval(nextSlide, 4000);
+    }
+});
