@@ -472,6 +472,10 @@ footer .d-flex a:hover {
     #newsCarousel .carousel-item {
         height: 290px;
     }
+    
+    .hero-section .lead {
+        font-size: 1rem !important;
+    }
 }
 
 
