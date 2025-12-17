@@ -28,11 +28,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Update navbar active state on scroll
+// Update navbar active state and background on scroll
 window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
     let current = '';
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
+
+    // Change navbar background on scroll
+    if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+        navbar.classList.remove('navbar-transparent');
+    } else {
+        navbar.classList.remove('navbar-scrolled');
+        navbar.classList.add('navbar-transparent');
+    }
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop - 120;
