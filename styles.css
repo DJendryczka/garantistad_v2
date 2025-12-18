@@ -530,7 +530,11 @@ footer .d-flex a:hover {
     }
 }
 
-
+@media (max-width: 767.98px) {
+  .hero-section .container {
+    margin-top: -50px;
+  }
+}
 
 /* Utility Classes */
 .bg-gradient-primary {
