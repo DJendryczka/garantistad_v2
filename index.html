@@ -169,75 +169,69 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hem" class="hero-section hero-slideshow">
-      <!-- Background Slideshow -->
-      <div class="slideshow-container">
-        <div
-          class="hero-slide active"
-          style="background-image: url('images/slide2.webp')"
-        ></div>
-        <div
-          class="hero-slide"
-          style="background-image: url('images/slide3.webp')"
-        ></div>
-        <div
-          class="hero-slide"
-          style="background-image: url('images/slide6.webp')"
-        ></div>
-        <div
-          class="hero-slide"
-          style="background-image: url('images/slide7.webp')"
-        ></div>
-        <div
-          class="hero-slide"
-          style="background-image: url('images/slide10.webp')"
-        ></div>
-      </div>
-      <div class="hero-overlay"></div>
+    <!-- Hero and Services Mosaic -->
+    <main id="hem" class="hero-mosaic">
       <div class="container">
-        <div class="row align-items-center min-vh-100">
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold text-primary mb-4">
-              Garanti-Städ i Lund AB Professionell Städservice i Lund
-            </h1>
-            <p class="lead mb-4">
-              Som ledande <strong>städfirma i Skåne</strong> sedan 1990,
-              erbjuder Garanti-Städ pålitlig
-              <strong>städservice i Lund, Malmö och hela Skåne</strong>.
-            </p>
-            <div class="mb-4">
-              <h5 class="text-primary mb-3">Våra specialiteter:</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="bi bi-check-circle text-success me-2"></i
-                  >Trappstädning
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success me-2"></i
-                  >Kontorsstädning
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success me-2"></i>Golvvård
-                </li>
-                <li>
-                  <i class="bi bi-check-circle text-success me-2"></i
-                  >Fönsterputs
-                </li>
-              </ul>
-            </div>
-            <div>
-              <a href="#kontakt" class="btn btn-primary btn-lg me-3">
-                <i class="bi bi-telephone me-2"></i>Ring för offert
-              </a>
-              <a href="#tjanster" class="btn btn-outline-primary btn-lg my-2">
-                Läs mer om våra tjänster
-              </a>
-            </div>
+        <div class="hero-intro">
+          <p class="hero-eyebrow">Garanti-Städ i Lund AB · Sedan 1990</p>
+          <h1>Professionell städservice<br />för en enklare vardag</h1>
+          <p class="hero-summary">
+            Trygg och miljömedveten städning för företag och
+            bostadsrättsföreningar i Lund, Malmö och hela Skåne.
+          </p>
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn btn-primary btn-lg">
+              Begär offert <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="tel:+46707592936" class="btn btn-outline-dark btn-lg">
+              <i class="bi bi-telephone" aria-hidden="true"></i> Ring oss
+            </a>
           </div>
         </div>
+
+        <section class="service-mosaic" aria-label="Våra städtjänster">
+          <a class="service-tile service-tile--featured" href="#service-kontor">
+            <img src="images/slide2.webp" alt="Professionell kontorsstädning" />
+            <span class="service-tile__shade"></span>
+            <span class="service-tile__content">
+              <span class="service-tile__label">För företag</span>
+              <strong>Kontorsstädning</strong>
+              <span class="service-tile__text">En renare och bättre arbetsmiljö</span>
+              <span class="service-tile__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+            </span>
+          </a>
+
+          <a class="service-tile service-tile--wide" href="#service-trapp">
+            <img src="images/slide3.webp" alt="Noggrann trappstädning" />
+            <span class="service-tile__shade"></span>
+            <span class="service-tile__content">
+              <span class="service-tile__label">För fastigheter</span>
+              <strong>Trappstädning</strong>
+              <span class="service-tile__text">Välkomnande entréer, varje dag</span>
+              <span class="service-tile__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+            </span>
+          </a>
+
+          <a class="service-tile" href="#service-golv">
+            <img src="images/slide6.webp" alt="Professionell golvvård" />
+            <span class="service-tile__shade"></span>
+            <span class="service-tile__content">
+              <strong>Golvvård</strong>
+              <span class="service-tile__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+            </span>
+          </a>
+
+          <a class="service-tile service-tile--accent" href="#service-fonster">
+            <img src="images/slide7.webp" alt="Professionell fönsterputs" />
+            <span class="service-tile__shade"></span>
+            <span class="service-tile__content">
+              <strong>Fönsterputs</strong>
+              <span class="service-tile__arrow" aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+            </span>
+          </a>
+        </section>
       </div>
-    </section>
+    </main>
 
     <!-- About Us Section -->
     <section id="om-oss" class="py-100 bg-light">
@@ -428,7 +422,7 @@
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3" id="service-trapp">
             <div class="card h-100 shadow-sm">
               <div class="card-body text-center">
                 <i class="bi bi-house display-4 text-primary mb-3"></i>
@@ -440,7 +434,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3" id="service-kontor">
             <div class="card h-100 shadow-sm">
               <div class="card-body text-center">
                 <i class="bi bi-building display-4 text-primary mb-3"></i>
@@ -452,7 +446,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3" id="service-golv">
             <div class="card h-100 shadow-sm">
               <div class="card-body text-center">
                 <i class="bi bi-stars display-4 text-primary mb-3"></i>
@@ -466,7 +460,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3" id="service-fonster">
             <div class="card h-100 shadow-sm">
               <div class="card-body text-center">
                 <i
