@@ -145,24 +145,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#hem">Hem</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#om-oss">Om Oss</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tjanster">Tjänster</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nyheter">Nyheter</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#varfor-oss">Varför Oss</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#kontakt">Kontakt</a>
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#hem">Hem</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tjanster">Tjänster</a></li>
+            <li class="nav-item"><a class="nav-link" href="#varfor-oss">Varför oss</a></li>
+            <li class="nav-item"><a class="nav-link" href="#om-oss">Om oss</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nyheter">Aktuellt</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link nav-cta" href="#kontakt">Begär offert</a>
             </li>
           </ul>
         </div>
@@ -235,680 +226,246 @@
       </div>
     </main>
 
-    <!-- About Us Section -->
-    <section id="om-oss" class="py-100 bg-light">
+    <!-- Trust Bar -->
+    <section class="trust-strip" aria-label="Snabbfakta om Garanti-Städ">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <h2 class="display-5 fw-bold text-primary">
-              Om Garanti-Städ i Lund AB
-            </h2>
-            <p class="lead">
-              Din pålitliga partner för professionell städning sedan 1990
-            </p>
-          </div>
+        <div class="trust-strip__grid">
+          <div><strong>35+ år</strong><span>Erfarenhet sedan 1990</span></div>
+          <div><strong>Tryggt</strong><span>Försäkrad och kontrollerad personal</span></div>
+          <div><strong>Miljösmart</strong><span>Miljöcertifierade produkter</span></div>
+          <div><strong>Lokalt</strong><span>Lund, Malmö och stora delar av Skåne</span></div>
         </div>
+      </div>
+    </section>
 
-        <div class="row align-items-center mb-5">
-          <div class="col-lg-6">
-            <div
-              class="about-image-container rounded-3 overflow-hidden mb-4 mb-lg-0 mx-auto"
-              style="width: 50%"
-            >
-              <img
-                src="images/lokaltidning.webp"
-                alt="Garanti Städ i Lokaltidningen"
-                class="img-fluid w-100"
-              />
-            </div>
+    <!-- Services -->
+    <section id="tjanster" class="section services-section">
+      <div class="container">
+        <header class="section-heading section-heading--split">
+          <div>
+            <p class="section-eyebrow">Våra tjänster</p>
+            <h2>Rätt städning för varje miljö</h2>
           </div>
-          <div class="col-lg-6">
-            <h3 class="h4 text-primary mb-3">Vår Historia</h3>
-            <p>
-              Garanti-Städ i Lund AB grundades 1990 med en enkel vision: att
-              erbjuda högkvalitativ städservice som överträffar förväntningarna.
-              Från vår ödmjuka början som ett litet familjeföretag har vi vuxit
-              till att bli en av Lunds mest betrodda städfirmor.
-            </p>
+          <p>
+            Tydliga upplägg, pålitlig personal och ett resultat som håller.
+            Vi anpassar frekvens och omfattning efter er verksamhet eller fastighet.
+          </p>
+        </header>
 
-            <p>
-              Under åren har vi utvecklat våra metoder och utökat våra tjänster
-              för att möta våra kunders växande behov. Vi är stolta över att ha
-              byggt långsiktiga relationer med både bostadsrättsföreningar och företag i
-              hela Skåne.
-            </p>
-
-            <div class="row mt-4">
-              <div class="col-6">
-                <div class="text-center">
-                  <h4 class="text-primary mb-1">35+</h4>
-                  <p class="small mb-0">År i branschen</p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="text-center">
-                  <h4 class="text-primary mb-1">500+</h4>
-                  <p class="small mb-0">Nöjda kunder</p>
-                </div>
-              </div>
+        <div class="services-list">
+          <article id="service-kontor" class="service-row">
+            <span class="service-row__number">01</span>
+            <div class="service-row__icon"><i class="bi bi-building" aria-hidden="true"></i></div>
+            <div>
+              <h3>Kontorsstädning</h3>
+              <p>En ren, trivsam och professionell arbetsmiljö – på tider som fungerar för verksamheten.</p>
             </div>
-          </div>
+            <a href="#kontakt" aria-label="Begär offert för kontorsstädning">Begär offert <i class="bi bi-arrow-right"></i></a>
+          </article>
+
+          <article id="service-trapp" class="service-row">
+            <span class="service-row__number">02</span>
+            <div class="service-row__icon"><i class="bi bi-house-door" aria-hidden="true"></i></div>
+            <div>
+              <h3>Trappstädning</h3>
+              <p>Regelbunden och noggrann skötsel av entréer, trapphus och gemensamma utrymmen.</p>
+            </div>
+            <a href="#kontakt" aria-label="Begär offert för trappstädning">Begär offert <i class="bi bi-arrow-right"></i></a>
+          </article>
+
+          <article id="service-golv" class="service-row">
+            <span class="service-row__number">03</span>
+            <div class="service-row__icon"><i class="bi bi-stars" aria-hidden="true"></i></div>
+            <div>
+              <h3>Golvvård</h3>
+              <p>Professionell behandling som återställer glansen och förlänger golvets livslängd.</p>
+            </div>
+            <a href="#kontakt" aria-label="Begär offert för golvvård">Begär offert <i class="bi bi-arrow-right"></i></a>
+          </article>
+
+          <article id="service-fonster" class="service-row">
+            <span class="service-row__number">04</span>
+            <div class="service-row__icon"><i class="bi bi-brightness-high" aria-hidden="true"></i></div>
+            <div>
+              <h3>Fönsterputs</h3>
+              <p>Kristallklara fönster, invändigt och utvändigt, med professionell utrustning.</p>
+            </div>
+            <a href="#kontakt" aria-label="Begär offert för fönsterputs">Begär offert <i class="bi bi-arrow-right"></i></a>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div
-              class="about-image-container rounded-3 overflow-hidden mb-4 mb-lg-0 mx-auto"
-              style="width: 50%"
-            >
-              <img
-                src="images/hogsta%20(1).webp"
-                alt="Högsta kreditvärdighet"
-                class="img-fluid w-100"
-              />
-            </div>
+    <!-- Why Us -->
+    <section id="varfor-oss" class="section why-section">
+      <div class="container">
+        <header class="section-heading">
+          <p class="section-eyebrow">Varför Garanti-Städ?</p>
+          <h2>En städpartner att lita på</h2>
+          <p>Vi gör det enkelt att få jämn kvalitet, tydlig kommunikation och trygga rutiner.</p>
+        </header>
+
+        <div class="benefit-grid">
+          <article>
+            <i class="bi bi-shield-check" aria-hidden="true"></i>
+            <h3>Trygg personal</h3>
+            <p>Vår personal är bakgrundskontrollerad och verksamheten är fullt försäkrad.</p>
+          </article>
+          <article>
+            <i class="bi bi-clock" aria-hidden="true"></i>
+            <h3>Flexibla tider</h3>
+            <p>Vi planerar städningen så att den stör verksamheten och de boende så lite som möjligt.</p>
+          </article>
+          <article>
+            <i class="bi bi-tree" aria-hidden="true"></i>
+            <h3>Miljövänliga val</h3>
+            <p>Vi använder miljöcertifierade produkter utan att kompromissa med resultatet.</p>
+          </article>
+          <article>
+            <i class="bi bi-chat-square-check" aria-hidden="true"></i>
+            <h3>Tydlig kontakt</h3>
+            <p>Du vet alltid vem du ska kontakta och får snabb hjälp när något behöver justeras.</p>
+          </article>
+          <article>
+            <i class="bi bi-receipt" aria-hidden="true"></i>
+            <h3>Transparent offert</h3>
+            <p>Tydlig omfattning och pris före start – utan överraskningar eller dolda avgifter.</p>
+          </article>
+          <article>
+            <i class="bi bi-hand-thumbs-up" aria-hidden="true"></i>
+            <h3>Kvalitetsgaranti</h3>
+            <p>Om vi missar något rättar vi till det enligt vår kvalitetsgaranti.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="om-oss" class="section about-section">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-visual">
+            <img src="images/lokaltidning.webp" alt="Garanti-Städ – ett lokalt företag i Lund" />
+            <div class="about-badge"><strong>Sedan 1990</strong><span>Lokalt i Lund</span></div>
           </div>
-          <div class="col-lg-6 order-lg-1">
-            <h3 class="h4 text-primary mb-3">Vårt Engagemang</h3>
-            <p>
-              Vi tror på att kvalitet och tillförlitlighet är grunden för all
-              framgångsrik affärsverksamhet. Vårt team består av erfarna och
-              pålitliga medarbetare som genomgår kontinuerlig utbildning för att
-              säkerställa att vi alltid levererar enligt högsta standard.
+          <div class="about-copy">
+            <p class="section-eyebrow">Om oss</p>
+            <h2>Lokalt engagemang. Lång erfarenhet.</h2>
+            <p class="about-lead">
+              Garanti-Städ startade i Lund 1990. Sedan dess har vi byggt långsiktiga
+              relationer med företag och bostadsrättsföreningar i hela Skåne.
             </p>
-
             <p>
-              Miljötänk är en central del av vår verksamhet. Vi använder endast
-              miljöcertifierade produkter som är säkra för både människor och
-              miljö, utan att kompromissa med rengöringsresultatet.
+              Vi kombinerar personlig service med tydliga arbetssätt. Vårt mål är
+              enkelt: att kunden ska känna sig trygg med både människorna, resultatet
+              och kommunikationen.
             </p>
-
-            <h5 class="text-primary mb-2">Våra Värderingar:</h5>
-            <ul class="list-unstyled">
-              <li>
-                <i class="bi bi-check-circle text-success me-2"></i>Kvalitet i
-                varje detalj
-              </li>
-              <li>
-                <i class="bi bi-check-circle text-success me-2"></i
-                >Miljömedvetenhet och hållbarhet
-              </li>
-              <li>
-                <i class="bi bi-check-circle text-success me-2"></i>Transparens
-                och ärlighet
-              </li>
-              <li>
-                <i class="bi bi-check-circle text-success me-2"></i>Kundnöjdhet
-                i fokus
-              </li>
-              <li>
-                <i class="bi bi-check-circle text-success me-2"></i>Kontinuerlig
-                förbättring
-              </li>
+            <ul class="check-list">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Samma höga kvalitet i varje uppdrag</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Erfarna och engagerade medarbetare</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Personlig kontakt och snabb återkoppling</li>
             </ul>
-          </div>
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12 text-center">
-            <div
-              class="ceo-testimonial bg-white rounded-4 shadow-lg p-5 position-relative"
-            >
-              <div class="quote-icon mb-3">
-                <i
-                  class="bi bi-quote text-primary"
-                  style="font-size: 3rem; opacity: 0.3"
-                ></i>
-              </div>
-              <h4 class="text-primary mb-4">Vårt Löfte Till Dig</h4>
-              <p class="lead mb-4 fst-italic">
-                "Vi levererar inte bara en städtjänst - vi levererar trygghet,
-                kvalitet och tid tillbaka till dig. Varje projekt, stort som
-                litet, behandlas med samma omsorg och professionalism som om det
-                vore vårt eget hem eller kontor."
-              </p>
-
-              <div class="ceo-info mt-4">
-                <div class="row align-items-center justify-content-center">
-                  <div class="col-auto">
-                    <div
-                      class="ceo-avatar rounded-circle overflow-hidden me-3"
-                      style="width: 80px; height: 80px"
-                    >
-                      <img
-                        src="images/INGEMAR.png"
-                        alt="Ingemar Månsson"
-                        class="w-100 h-100"
-                        style="object-fit: cover"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-auto text-start">
-                    <div class="fw-bold text-primary fs-5">Ingemar Månsson</div>
-                    <div class="text-muted">VD</div>
-                    <div class="small text-muted">Garanti-Städ i Lund AB</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="signature mt-3">
-                <svg
-                  width="120"
-                  height="40"
-                  viewBox="0 0 120 40"
-                  class="text-primary opacity-50"
-                >
-                  <path
-                    d="M10,25 Q30,10 50,25 T90,25"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                  />
-                </svg>
-              </div>
-            </div>
+            <blockquote>
+              “Vi levererar inte bara en städtjänst – vi levererar trygghet,
+              kvalitet och tid tillbaka till dig.”
+              <footer>Ingemar Månsson, VD</footer>
+            </blockquote>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="tjanster" class="py-100">
+    <!-- News -->
+    <section id="nyheter" class="section news-section">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <h2 class="display-5 fw-bold text-primary">Våra Tjänster</h2>
-            <p class="lead">
-              Vi erbjuder professionella städtjänster anpassade efter dina behov
-            </p>
+        <header class="section-heading section-heading--split">
+          <div>
+            <p class="section-eyebrow">Aktuellt</p>
+            <h2>Senaste från Garanti-Städ</h2>
           </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3" id="service-trapp">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <i class="bi bi-house display-4 text-primary mb-3"></i>
-                <h5 class="card-title">Trappstädning</h5>
-                <p class="card-text">
-                  Regelbunden trappstädning med miljöanpassade produkter och
-                  flexibla tider.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" id="service-kontor">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <i class="bi bi-building display-4 text-primary mb-3"></i>
-                <h5 class="card-title">Kontorsstädning</h5>
-                <p class="card-text">
-                  Professionell städning av kontor och företagslokaler för en
-                  ren och inspirerande arbetsmiljö.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" id="service-golv">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <i class="bi bi-stars display-4 text-primary mb-3"></i>
+          <p>Nya samarbeten och korta uppdateringar från vår verksamhet.</p>
+        </header>
 
-                <h5 class="card-title">Golvvård</h5>
-
-                <p class="card-text">
-                  Professionell golvbehandling som förlänger livslängden och
-                  återställer glansen.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3" id="service-fonster">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body text-center">
-                <i
-                  class="bi bi-brightness-high display-4 text-primary mb-3"
-                ></i>
-                <h5 class="card-title">Fönsterputs</h5>
-                <p class="card-text">
-                  Kristallklara fönster både in- och utvändigt med professionell
-                  utrustning.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="news-grid">
+          <article>
+            <time datetime="2026-06-01">1 juni 2026</time>
+            <h3>Välkommen Brf Källby 1 och 2!</h3>
+            <p>Vi ser fram emot att leverera rena och välkomnande gemensamma utrymmen.</p>
+          </article>
+          <article>
+            <time datetime="2026-01-01">1 januari 2026</time>
+            <h3>Välkommen Brf Sockerbruket 1!</h3>
+            <p>Ett nytt samarbete och ännu ett förtroende som vi är stolta över.</p>
+          </article>
+          <article>
+            <time datetime="2026-01-01">1 januari 2026</time>
+            <h3>Välkommen Brf Gillesgården!</h3>
+            <p>Garanti-Städ har fått förtroendet att ta hand om föreningens trappstädning.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- News Carousel Section -->
-    <section id="nyheter" class="py-100 bg-light">
+    <!-- Contact CTA -->
+    <section id="kontakt" class="contact-cta">
       <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="display-5 fw-bold text-primary">Aktuellt & Nyheter</h2>
-            <p class="lead">
-              Håll dig uppdaterad med våra senaste nyheter och erbjudanden
-            </p>
+        <div class="contact-cta__inner">
+          <div>
+            <p class="section-eyebrow">Kontakta oss</p>
+            <h2>Berätta vad ni behöver hjälp med</h2>
+            <p>Vi återkommer med ett tydligt upplägg och en kostnadsfri offert.</p>
           </div>
-        </div>
-
-        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#newsCarousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#newsCarousel"
-              data-bs-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#newsCarousel"
-              data-bs-slide-to="2"
-            ></button>
-          </div>
-
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
-                  <div class="card news-card h-100 mx-auto">
-                    <div class="card-body text-center">
-                      <div
-                        class="d-flex align-items-center justify-content-center mb-3"
-                      >
-                        <i class="bi bi-calendar-event text-primary me-2"></i>
-                        <small class="text-muted">1 Juni 2026</small>
-                      </div>
-                      <h5 class="card-title text-primary">
-                        Välkommen Brf Källby 1 och 2!
-                      </h5>
-                      <p class="card-text">
-                        Vi är glada att meddela vårt nya samarbete med Brf Källby 1 och 2. Vi ser fram emot att leverera skinande rena gemensamma utrymmen.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
-                  <div class="card news-card h-100 mx-auto">
-                    <div class="card-body text-center">
-                      <div
-                        class="d-flex align-items-center justify-content-center mb-3"
-                      >
-                        <i class="bi bi-house-heart text-primary me-2"></i>
-                        <small class="text-muted">1 Januari 2026</small>
-                      </div>
-                      <h5 class="card-title text-primary">
-                        Välkommen Brf Sockerbruket 1!
-                      </h5>
-                      <p class="card-text">
-                        Vi är glada att meddela vårt nya samarbete med Brf Sockerbruket 1. Vi ser fram emot att leverera skinande rena gemensamma utrymmen.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6">
-                  <div class="card news-card h-100 mx-auto">
-                    <div class="card-body text-center">
-                      <div
-                        class="d-flex align-items-center justify-content-center mb-3"
-                      >
-                        <i class="bi bi-house-heart text-primary me-2"></i>
-                        <small class="text-muted">1 Januari 2026</small>
-                      </div>
-                      <h5 class="card-title text-primary">
-                        Välkommen Brf Gillesgården!
-                      </h5>
-                      <p class="card-text">
-                        Garanti-Städ hälsar Brf Gillesgården varmt välkomna som ny kund. Vi är stolta över förtroendet att sköta er trappstädning.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#newsCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#newsCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section id="varfor-oss" class="py-5 why-us-bg">
-      <div class="why-us-overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <h2 class="display-5 fw-bold text-primary">
-              Varför Välja Garanti-Städ?
-            </h2>
-            <p class="lead">
-              Vi strävar efter excellens i varje detalj av våra städtjänster
-            </p>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <div class="text-center">
-              <div
-                class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                style="width: 80px; height: 80px"
-              >
-                <i class="bi bi-shield-check fs-2"></i>
-              </div>
-              <h4 class="text-primary">Försäkrade & Bakgrundskontrollerade</h4>
-              <p>
-                All vår personal är bakgrundskontrollerad och vi är fullt
-                försäkrade för din trygghet och säkerhet.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="text-center">
-              <div
-                class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                style="width: 80px; height: 80px"
-              >
-                <i class="bi bi-clock fs-2"></i>
-              </div>
-              <h4 class="text-primary">Flexibla Tider</h4>
-              <p>
-                Vi anpassar oss efter ditt schema med städning vardagar, helger
-                och kvällstid efter överenskommelse.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="text-center">
-              <div
-                class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                style="width: 80px; height: 80px"
-              >
-                <i class="bi bi-tree fs-2"></i>
-              </div>
-              <h4 class="text-primary">Miljövänliga Produkter</h4>
-              <p>
-                Vi använder endast miljöcertifierade städprodukter som är säkra
-                för familj, husdjur och miljö.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="text-center">
-              <div
-                class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                style="width: 80px; height: 80px"
-              >
-                <i class="bi bi-star-fill fs-2"></i>
-              </div>
-              <h4 class="text-primary">35 År i Branschen</h4>
-              <p>
-                Med över 35 års erfarenhet har vi utvecklat effektiva metoder
-                för alla typer av städuppdrag.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="text-center">
-              <div
-                class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                style="width: 80px; height: 80px"
-              >
-                <i class="bi bi-currency-exchange fs-2"></i>
-              </div>
-              <h4 class="text-primary">Transparenta Priser</h4>
-              <p>
-                Inga dolda avgifter. Du får alltid en tydlig offert före arbetet
-                påbörjas.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="text-center">
-              <div
-                class="feature-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
-                style="width: 80px; height: 80px"
-              >
-                <i class="bi bi-hand-thumbs-up fs-2"></i>
-              </div>
-              <h4 class="text-primary">Nöjd-kund-garanti</h4>
-              <p>
-                Vi strävar efter högsta kvalitet. Om vi mot förmodan skulle
-                missa något, åtgärdar vi det enligt vår kvalitetsgaranti.
-              </p>
-            </div>
+          <div class="contact-cta__actions">
+            <a class="btn btn-light btn-lg" href="tel:+46707592936">
+              <i class="bi bi-telephone" aria-hidden="true"></i>
+              <span><small>Ring direkt</small>070-759 29 36</span>
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="mailto:ingemar@garantistad.se">
+              <i class="bi bi-envelope" aria-hidden="true"></i>
+              <span><small>Skicka e-post</small>ingemar@garantistad.se</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer id="kontakt" class="bg-dark text-light py-5">
+    <footer class="site-footer">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-3">
-            <h5 class="text-primary mb-3">
-              <i class="bi bi-house-check me-2"></i>
-              Garanti-Städ i Lund AB
-            </h5>
-            <p class="mb-3">
-              Din pålitliga partner för professionell städservice i Lund och
-              omkringliggande områden. Vi strävar efter perfektion i varje
-              detalj.
-            </p>
-            <div class="mb-2">
-              <i class="bi bi-geo-alt text-primary me-2"></i>
-              <span>Propellervägen 14, 224 78 Lund</span>
-            </div>
-            <div class="d-flex gap-3">
-              <a href="#" class="text-light fs-4"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a href="#" class="text-light fs-4"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a href="#" class="text-light fs-4"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </div>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="" />
+            <h2>Garanti-Städ i Lund AB</h2>
+            <p>Professionell och trygg städservice i Lund, Malmö och Skåne sedan 1990.</p>
+            <address>Propellervägen 14<br />224 78 Lund</address>
           </div>
 
-          <div class="col-lg-5">
-            <h5 class="text-primary mb-3">Kontaktinformation</h5>
-            <div class="contact-grid">
-                <div class="contact-card h-100">
-                <div class="d-flex align-items-start gap-2 mb-2">
-                  <i class="bi bi-person-badge text-primary"></i>
-                  <div>
-                    <div class="text-secondary small">
-                      Huvudman och ägare
-                    </div>
-                    <div class="fw-semibold text-light">Jan Månsson</div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-1">
-                  <i class="bi bi-phone text-primary"></i>
-                  <a
-                    href="tel:+46707214043"
-                    class="text-light text-decoration-none"
-                        >070-721 40 43</a
-                    >
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="bi bi-envelope text-primary"></i>
-                  <a
-                    href="mailto:jan@garantistad.se"
-                    class="text-light text-decoration-none"
-                    >jan@garantistad.se</a
-                  >
-                </div>
-              </div>
-              <div class="contact-card h-100">
-                <div class="d-flex align-items-start gap-2 mb-2">
-                  <i class="bi bi-person-badge text-primary"></i>
-                  <div>
-                    <div class="text-secondary small">
-                      Företag och kundansvarig
-                    </div>
-                    <div class="fw-semibold text-light">Ingemar Månsson</div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-1">
-                  <i class="bi bi-phone text-primary"></i>
-                  <a
-                    href="tel:+46707592936"
-                    class="text-light text-decoration-none"
-                    >070-759 29 36</a
-                  >
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="bi bi-envelope text-primary"></i>
-                  <a
-                    href="mailto:ingemar@garantistad.se"
-                    class="text-light text-decoration-none"
-                    >ingemar@garantistad.se</a
-                  >
-                </div>
-              </div>
-
-              <div class="contact-card h-100">
-                <div class="d-flex align-items-start gap-2 mb-2">
-                  <i class="bi bi-briefcase text-primary"></i>
-                  <div>
-                    <div class="text-secondary small">Arbetsledare</div>
-                    <div class="fw-semibold text-light">Iwona Jendryczka</div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-1">
-                  <i class="bi bi-phone text-primary"></i>
-                  <a
-                    href="tel:+46702060923"
-                    class="text-light text-decoration-none"
-                    >073-713 81 60</a
-                  >
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="bi bi-envelope text-primary"></i>
-                  <a
-                    href="mailto:iwona@garantistad.se"
-                    class="text-light text-decoration-none"
-                    >iwona@garantistad.se</a
-                  >
-                </div>
-              </div>
-
-              <div class="contact-card h-100">
-                <div class="d-flex align-items-start gap-2 mb-2">
-                  <i class="bi bi-calculator text-primary"></i>
-                  <div>
-                    <div class="text-secondary small">Ekonomiansvarig</div>
-                    <div class="fw-semibold text-light">Dariusz Jendryczka</div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-1">
-                  <i class="bi bi-phone text-primary"></i>
-                  <a
-                    href="tel:+46702060923"
-                    class="text-light text-decoration-none"
-                    >070-206 09 23</a
-                  >
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="bi bi-envelope text-primary"></i>
-                  <a
-                    href="mailto:ekonomi@garantistad.se"
-                    class="text-light text-decoration-none"
-                    >ekonomi@garantistad.se</a
-                  >
-                </div>
-              </div>
-            </div>
+          <div>
+            <h3>Kontaktpersoner</h3>
+            <ul class="footer-contacts">
+              <li><strong>Jan Månsson</strong><span>Huvudman och ägare</span><a href="tel:+46707214043">070-721 40 43</a></li>
+              <li><strong>Ingemar Månsson</strong><span>Företag och kundansvarig</span><a href="tel:+46707592936">070-759 29 36</a></li>
+              <li><strong>Iwona Jendryczka</strong><span>Arbetsledare</span><a href="tel:+46737138160">073-713 81 60</a></li>
+              <li><strong>Dariusz Jendryczka</strong><span>Ekonomiansvarig</span><a href="tel:+46702060923">070-206 09 23</a></li>
+            </ul>
           </div>
 
-          <div class="col-lg-4">
-            <h5 class="text-primary mb-3">Öppettider</h5>
-            <div class="opening-hours">
-              <div class="d-flex justify-content-between mb-1">
-                <span>Måndag - Fredag:</span>
-                <span>07:00 - 16:00</span>
-              </div>
-              <div class="d-flex justify-content-between mb-1">
-                <span>Lördag:</span>
-                <span>Stängt</span>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <span>Söndag:</span>
-                <span>Stängt</span>
-              </div>
-
-              <h6 class="text-primary mt-4 mb-2">Serviceområden</h6>
-              <p class="small mb-1">Lund • Malmö • Eslöv • Höör</p>
-              <p class="small mb-1">Dalby • Genarp • Södra Sandby • Veberöd</p>
-              <p class="small">Och omkringliggande områden</p>
-            </div>
+          <div>
+            <h3>Öppettider</h3>
+            <dl class="opening-list">
+              <div><dt>Måndag–fredag</dt><dd>07:00–16:00</dd></div>
+              <div><dt>Lördag–söndag</dt><dd>Stängt</dd></div>
+            </dl>
+            <h3 class="footer-subheading">Serviceområden</h3>
+            <p>Lund, Malmö, Eslöv, Höör, Dalby, Genarp, Södra Sandby, Veberöd med omnejd.</p>
           </div>
         </div>
 
-        <hr class="my-4" />
-
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p class="mb-0">
-              &copy; <span id="currentYear"></span> Garanti-Städ i Lund AB. Alla
-              rättigheter förbehållna.
-            </p>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <p class="mb-0">
-              <a
-                href="integritetspolicy.html"
-                class="text-light text-decoration-none me-3"
-                >Integritetspolicy</a
-              >
-              <a href="villkor.html" class="text-light text-decoration-none"
-                >Villkor</a
-              >
-            </p>
+        <div class="footer-bottom">
+          <p>&copy; <span id="currentYear"></span> Garanti-Städ i Lund AB</p>
+          <div>
+            <a href="integritetspolicy.html">Integritetspolicy</a>
+            <a href="villkor.html">Villkor</a>
           </div>
         </div>
       </div>
